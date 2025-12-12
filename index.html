@@ -654,10 +654,50 @@
                 text-align: center;
             }
 
-            .projects-grid {
-                grid-template-columns: 1fr;
-                gap: 40px;
-            }
+         @media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+        text-align: center;
+        width: 100%;
+    }
+
+    .container {
+        padding: 0 20px;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    /* THIS IS THE KEY FIX */
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .project-card {
+        border-radius: 25px;
+        margin: 0 auto;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    /* FIX FOR SCREENSHOT GALLERY */
+    .screenshot-gallery {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .screenshot {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Rest of your mobile styles... */
+}
 
             .about-content {
                 padding: 40px 25px;
